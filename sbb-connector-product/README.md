@@ -83,7 +83,7 @@ The results display provides detailed journey information including departure/ar
 
 Before using the SBB Connector, you need to obtain API credentials from SBB:
 
-1. **Register for API Access**: Contact SBB to request access to the Swiss Mobility API
+1. **Register for API Access**: Visit the [SBB Developer Portal](https://developer.sbb.ch/) to register and request access to the Swiss Mobility API. Follow their onboarding process to receive your credentials.
 2. **Obtain Credentials**: You will receive:
    - Client ID (UUID format)
    - Client Secret
@@ -97,7 +97,31 @@ Before using the SBB Connector, you need to obtain API credentials from SBB:
 
 ### Installation
 
-Install the SBB Connector from the Axon Ivy Marketplace or add it as a Maven dependency to your project.
+**Option 1: Axon Ivy Marketplace**  
+Install the SBB Connector directly from the [Axon Ivy Marketplace](https://market.axonivy.com/).
+
+**Option 2: Maven Dependency**  
+Add the following dependency to your project's `pom.xml`:
+
+```xml
+<dependency>
+  <groupId>com.axonivy.connector.sbb</groupId>
+  <artifactId>sbb-connector</artifactId>
+  <version>12.0.0</version>
+  <type>iar</type>
+</dependency>
+```
+
+Optionally, include the demo application:
+
+```xml
+<dependency>
+  <groupId>com.axonivy.connector.sbb</groupId>
+  <artifactId>sbb-connector-demo</artifactId>
+  <version>12.0.0</version>
+  <type>iar</type>
+</dependency>
+```
 
 ### Configuration
 
